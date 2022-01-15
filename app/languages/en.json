@@ -1,0 +1,18 @@
+{
+    "home": {
+        "nav": {
+            "home": "Home",
+            "blog": "Blog",
+            "about me": "About me"
+        },
+        "welcome": {
+            "message": "Hello! 👋 , I'm Gustavo Welcome! \\^o^/"
+        }
+    },
+    "blog": {
+        "message": "There are no posts yet😢"
+    },
+    "about_me": {
+        "message": "In development"
+    }
+}

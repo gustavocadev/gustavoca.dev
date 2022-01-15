@@ -1,0 +1,11 @@
+{
+    "welcome": {
+        "message": "¡Hola! 👋 , soy Gustavo Bienvenido/a \\^o^/"
+    },
+    "blog": {
+        "message": "No hay posts todavia 😢"
+    },
+    "about_me": {
+        "message": "En desarrollo... ✏️"
+    }
+}
