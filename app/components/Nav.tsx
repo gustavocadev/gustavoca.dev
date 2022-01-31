@@ -1,13 +1,9 @@
 import { useState } from "react";
-import { LoaderFunction, NavLink, useLoaderData } from "remix";
-import { readJSON } from "~/ioutils";
+import { Twirl as Hamburger } from "hamburger-react";
+import { NavLink } from "remix";
 
 const Nav = () => {
-    const [menu, setMenu] = useState(false);
-
-    const handleToggle = () => {
-        setMenu(!menu);
-    };
+    const [isOpen, setOpen] = useState(false);
 
     // const changeLanguage = async (language: string) => {
     //     const res = await fetch(`http://localhost:3000/languages/${language}`);
@@ -16,49 +12,72 @@ const Nav = () => {
     // };
 
     return (
-        <header className="h-[92px]">
-            <nav className="flex justify-center items-center px-[45px] lg:px-[112px] font-semibold">
-                {/* <header className="flex text-[18px] lg:text-[24px] my-[34px] uppercase text-center text-white hover:text-[#81ECEC] transition">
+        <>
+            <header
+                className={`h-auto  absolute w-full ${
+                    isOpen && "bg-[#131313]"
+                } top-0`}
+            >
+                <nav className="flex flex-col items-center justify-center font-semibold sm:flex-row px-[16px] relative z-50 ">
+                    {/* <header className="flex text-[18px] lg:text-[24px] my-[34px] uppercase text-center text-white hover:text-[#81ECEC] transition">
                     <h1>CA Gustavo</h1>
                 </header> */}
-                <ul className="flex text-[18px] lg:text-[18px] my-[34px] uppercase  text-center">
-                    <li>
-                        <NavLink
-                            to="/"
-                            className={({ isActive }) =>
-                                isActive ? "text-[#FCD34D]" : ""
-                            }
-                        >
-                            Home <span className="font-normal">🏡</span>
-                        </NavLink>
-                    </li>
-                    <li className="px-[45px] lg:px-[90px]">
-                        <NavLink
-                            to="/blog"
-                            className={({ isActive }) =>
-                                isActive ? "text-[#FCD34D]" : ""
-                            }
-                        >
-                            Blog <span className="font-normal">📖</span>
-                        </NavLink>
-                    </li>
-                    <li>
-                        <NavLink
-                            to="/about"
-                            className={({ isActive }) =>
-                                isActive ? "text-[#FCD34D]" : ""
-                            }
-                        >
-                            About me <span className="font-normal">👦</span>
-                        </NavLink>
-                    </li>
-                </ul>
-                {/* <section
+                    <div className="sm:hidden pt-[16px] flex justify-end w-full ">
+                        <Hamburger toggled={isOpen} toggle={setOpen} />
+                    </div>
+                    <ul
+                        className={`${
+                            isOpen ? "flex" : "hidden"
+                        } w-full sm:w-auto  flex-col sm:flex-row sm:flex text-[18px] lg:text-[18px] sm:my-[34px] uppercase  text-center gap-[36px] sm:gap-[45px] lg:gap-[45px] py-[18px] sm:py-[0px]`}
+                    >
+                        <li>
+                            <NavLink
+                                to="/"
+                                className={({ isActive }) =>
+                                    isActive ? "text-[#FCD34D]" : ""
+                                }
+                            >
+                                Home <span className="font-normal">🏡</span>
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink
+                                to="/projects"
+                                className={({ isActive }) =>
+                                    isActive ? "text-[#FCD34D]" : ""
+                                }
+                            >
+                                PROJECTS{" "}
+                                <span className="font-normal">💻️</span>
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink
+                                to="/blog"
+                                className={({ isActive }) =>
+                                    isActive ? "text-[#FCD34D]" : ""
+                                }
+                            >
+                                Blog <span className="font-normal">📖</span>
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink
+                                to="/about"
+                                className={({ isActive }) =>
+                                    isActive ? "text-[#FCD34D]" : ""
+                                }
+                            >
+                                About me <span className="font-normal">👦</span>
+                            </NavLink>
+                        </li>
+                    </ul>
+                    {/* <section
                     className={`flex flex-col text-[18px] lg:text-[18px] my-[34px]   rounded`}
                 >
                     <button
                         onClick={handleToggle}
-                        className="uppercase font-semibold "
+                        className="font-semibold uppercase "
                     >
                         Language 🌍
                     </button>
@@ -77,8 +96,10 @@ const Nav = () => {
                         </div>
                     </section>
                 </section> */}
-            </nav>
-        </header>
+                </nav>
+            </header>
+            <div className="h-[92px]"></div>
+        </>
     );
 };
 
