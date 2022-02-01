@@ -10,6 +10,30 @@ export const getPots = () => {
             tags: ["react", "remix", "typescript"],
             id: crypto.randomUUID(),
             url: "https://gif-app.vercel.app/?title=christopher+robin"
+        },
+        {
+            title: "Posts App",
+            img: "https://smashballoon.com/wp-content/uploads/2020/08/Types-of-Facebook-Posts-Proven-to-Easily-Boost-Page-Engagement.jpg",
+            description: "Es una aplicación en donde puedes crearte una cuenta, iniciar sesión y crear posts 📓",
+            tags: ["express", "handlebars", "nodejs", 'mongodb'],
+            id: crypto.randomUUID(),
+            url: "https://posts-app-node.herokuapp.com"
+        },
+         {
+            title: "App de usuarios",
+            img: "https://ayltoninacio.com.br/img/p/74w750.jpg",
+            description: "Es una aplicación en donde crear usuarios y listarlos. 🧑‍🦱",
+            tags: ["vue", "nodejs", "express"],
+            id: crypto.randomUUID(),
+            url: "https://base-de-datos-webapp.herokuapp.com"
+        },
+           {
+            title: "App de Cryptomoneda",
+            img: "https://dmn-dallas-news-prod.cdn.arcpublishing.com/resizer/FJpBxbM2AVets8_N0pnHhRwKerw=/1660x934/smart/filters:no_upscale()/cloudfront-us-east-1.images.arcpublishing.com/dmn/DGEV2OLJSRHK5KVI4PT3QHGFEA.jpg",
+            description: "Es una aplicación en donde puedes cotizar cryptomonedas. 🪙",
+            tags: ["react", "vite", "typescript"],
+            id: crypto.randomUUID(),
+            url: "https://react-cryptocosas.netlify.app/"
         }
     ]
 

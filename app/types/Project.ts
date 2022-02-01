@@ -5,4 +5,5 @@ export interface Project {
     tags: string[]
     id: string
     url: string
+    authors?: string
 }
