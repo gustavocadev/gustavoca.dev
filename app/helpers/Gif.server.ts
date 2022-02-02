@@ -52,9 +52,7 @@ const getGifs = () => {
         {
             gif: "https://pa1.narvii.com/6371/60ae0a88ef1eb7335a34547b583d85be15ef152e_hq.gif",
         },
-        {
-            gif: 'https://i.gifer.com/fetch/w300-preview/81/81d74f3b0c6ad8369602a30a56345818.gif'
-        }
+       
     ]
 
     return data
