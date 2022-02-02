@@ -12,6 +12,14 @@ export const getPots = () => {
             url: "https://gif-app.vercel.app/?title=christopher+robin"
         },
         {
+            title: "Clients App",
+            img: "https://f.hellowork.com/obs-static-images/seo/ObsJob/responsable-des-relations-client.jpg",
+            description: "Es una aplicación en donde puedes registrar clientes, editar, eliminar, y actualizarlos 📠",
+            tags: ["Deno", "oak", "mongodb", 'react', 'typescript'],
+            id: crypto.randomUUID(),
+            url: "https://clients-react-vite-typescript.vercel.app"
+        },
+        {
             title: "Posts App",
             img: "https://smashballoon.com/wp-content/uploads/2020/08/Types-of-Facebook-Posts-Proven-to-Easily-Boost-Page-Engagement.jpg",
             description: "Es una aplicación en donde puedes crearte una cuenta, iniciar sesión y crear posts 📓",
@@ -22,7 +30,7 @@ export const getPots = () => {
          {
             title: "App de usuarios",
             img: "https://ayltoninacio.com.br/img/p/74w750.jpg",
-            description: "Es una aplicación en donde crear usuarios y listarlos. 🧑‍🦱",
+            description: "Es una aplicación en donde puedes crear usuarios y listarlos. 🧑‍🦱",
             tags: ["vue", "nodejs", "express"],
             id: crypto.randomUUID(),
             url: "https://base-de-datos-webapp.herokuapp.com"
