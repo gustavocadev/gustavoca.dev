@@ -28,7 +28,7 @@ const getGifs = () => {
             gif: "https://64.media.tumblr.com/de92e9cdc0c54d0927207b4a3135ee6d/8847eabb15eb9ab0-29/s400x600/c182e443a6dad310d1eea41e43f2e42c6bffabde.gifv",
         },
         {
-            gif: "https://c.tenor.com/mKv3efJsA7gAAAAC/fumetsu-no-anata-to-your-eternity.gif",
+            gif: "https://i.pinimg.com/originals/d0/d3/ef/d0d3ef36852978d5ac05d7d9a2ceb3d6.gif",
         },
         {
             gif: "https://i.pinimg.com/originals/e5/c0/f7/e5c0f72b15f5476214586fdb50898e55.gif",

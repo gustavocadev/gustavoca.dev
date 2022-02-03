@@ -19,6 +19,11 @@ export const links: LinksFunction = () => {
             rel: "stylesheet",
             href: styles,
         },
+        {
+            href: "https://cdn.jsdelivr.net/gh/vaibhav111tandon/vov.css@latest/vov.css",
+            rel: "stylesheet",
+            type: "text/css",
+        },
     ];
 };
 
@@ -34,7 +39,7 @@ export default function App() {
                 <Meta />
                 <Links />
             </head>
-            <body className="bg-[#F7F6F3] text-dark dark:bg-[#181818] dark:text-gray-200 w-full ">
+            <body className="bg-[#F7F6F3] text-dark dark:bg-[#181818] dark:text-gray-200 w-full overflow-x-hidden ">
                 <Nav />
                 <Outlet />
                 <Footer />
