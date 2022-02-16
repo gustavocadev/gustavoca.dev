@@ -468,10 +468,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
-.invisible {
-  visibility: hidden;
-}
-
 .absolute {
   position: absolute;
 }
@@ -526,20 +522,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: auto;
 }
 
+.h-\[100px\] {
+  height: 100px;
+}
+
 .h-full {
   height: 100%;
 }
 
 .h-\[168px\] {
   height: 168px;
-}
-
-.h-screen {
-  height: 100vh;
-}
-
-.h-\[100px\] {
-  height: 100px;
 }
 
 .w-full {
@@ -711,8 +703,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 18px;
 }
 
-.text-\[42px\] {
-  font-size: 42px;
+.text-\[50px\] {
+  font-size: 50px;
 }
 
 .text-4xl {
@@ -730,22 +722,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .text-\[16px\] {
   font-size: 16px;
-}
-
-.text-\[40px\] {
-  font-size: 40px;
-}
-
-.text-\[58px\] {
-  font-size: 58px;
-}
-
-.text-\[54px\] {
-  font-size: 54px;
-}
-
-.text-\[50px\] {
-  font-size: 50px;
 }
 
 .font-semibold {
@@ -766,26 +742,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .not-italic {
   font-style: normal;
-}
-
-.leading-\[81px\] {
-  line-height: 81px;
-}
-
-.leading-\[62px\] {
-  line-height: 62px;
-}
-
-.leading-\[60px\] {
-  line-height: 60px;
-}
-
-.leading-\[76px\] {
-  line-height: 76px;
-}
-
-.leading-\[72px\] {
-  line-height: 72px;
 }
 
 .leading-\[68px\] {
@@ -812,16 +768,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
-.text-\[\#7BED9F\] {
-  --tw-text-opacity: 1;
-  color: rgb(123 237 159 / var(--tw-text-opacity));
-}
-
-.text-\[\#74B9FF\] {
-  --tw-text-opacity: 1;
-  color: rgb(116 185 255 / var(--tw-text-opacity));
-}
-
 .text-\[\#FF7675\] {
   --tw-text-opacity: 1;
   color: rgb(255 118 117 / var(--tw-text-opacity));
@@ -832,24 +778,19 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(162 155 254 / var(--tw-text-opacity));
 }
 
+.text-\[\#7BED9F\] {
+  --tw-text-opacity: 1;
+  color: rgb(123 237 159 / var(--tw-text-opacity));
+}
+
+.text-\[\#74B9FF\] {
+  --tw-text-opacity: 1;
+  color: rgb(116 185 255 / var(--tw-text-opacity));
+}
+
 .text-\[\#FD79A8\] {
   --tw-text-opacity: 1;
   color: rgb(253 121 168 / var(--tw-text-opacity));
-}
-
-.text-sky-500 {
-  --tw-text-opacity: 1;
-  color: rgb(14 165 233 / var(--tw-text-opacity));
-}
-
-.text-sky-400 {
-  --tw-text-opacity: 1;
-  color: rgb(56 189 248 / var(--tw-text-opacity));
-}
-
-.text-yellow-300 {
-  --tw-text-opacity: 1;
-  color: rgb(253 224 71 / var(--tw-text-opacity));
 }
 
 .transition {
@@ -948,40 +889,8 @@ Ensure the default browser behavior of the `hidden` attribute.
     padding-right: 32px;
   }
 
-  .sm\:text-\[68px\] {
-    font-size: 68px;
-  }
-
-  .sm\:text-\[88px\] {
-    font-size: 88px;
-  }
-
-  .sm\:text-\[78px\] {
-    font-size: 78px;
-  }
-
-  .sm\:text-\[76px\] {
-    font-size: 76px;
-  }
-
   .sm\:text-\[92px\] {
     font-size: 92px;
-  }
-
-  .sm\:leading-\[78px\] {
-    line-height: 78px;
-  }
-
-  .sm\:leading-\[88px\] {
-    line-height: 88px;
-  }
-
-  .sm\:leading-\[98px\] {
-    line-height: 98px;
-  }
-
-  .sm\:leading-\[96px\] {
-    line-height: 96px;
   }
 
   .sm\:leading-\[108px\] {
@@ -993,14 +902,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   .md\:px-\[104px\] {
     padding-left: 104px;
     padding-right: 104px;
-  }
-
-  .md\:text-\[92px\] {
-    font-size: 92px;
-  }
-
-  .md\:leading-\[108px\] {
-    line-height: 108px;
   }
 }
 
@@ -1042,22 +943,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:text-\[18px\] {
     font-size: 18px;
-  }
-
-  .lg\:text-\[92px\] {
-    font-size: 92px;
-  }
-
-  .lg\:text-\[88px\] {
-    font-size: 88px;
-  }
-
-  .lg\:leading-\[108px\] {
-    line-height: 108px;
-  }
-
-  .lg\:leading-\[112px\] {
-    line-height: 112px;
   }
 }
 

@@ -40,7 +40,7 @@ const Nav = () => {
                                 Home <span className="font-normal">🏡</span>
                             </NavLink>
                         </li>
-                        <li>
+                        {/* <li>
                             <NavLink
                                 to="/projects"
                                 className={({ isActive }) =>
@@ -50,7 +50,7 @@ const Nav = () => {
                                 PROJECTS{" "}
                                 <span className="font-normal">💻️</span>
                             </NavLink>
-                        </li>
+                        </li> */}
                         <li>
                             <NavLink
                                 to="/blog"
