@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Twirl as Hamburger } from "hamburger-react";
-import { NavLink } from "remix";
+import { NavLink } from "@remix-run/react";
 
 const Nav = () => {
     const [isOpen, setOpen] = useState(false);
