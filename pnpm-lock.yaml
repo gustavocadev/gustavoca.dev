@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  hamburger-qwik:
+    specifier: ^0.1.1
+    version: 0.1.1
   typed.js:
     specifier: ^2.0.16
     version: 2.0.16
@@ -4768,6 +4771,11 @@ packages:
       pumpify: 1.5.1
       through2: 2.0.5
     dev: true
+
+  /hamburger-qwik@0.1.1:
+    resolution: {integrity: sha512-M2+PBRu2mSo2Immxp9hLO1EK/cVynJiNskFVeTjwtwPU+4sOt+cwP5+5azLuycig1ZMlTw6FrVPOAGfIrD+qWA==}
+    engines: {node: '>=15.0.0'}
+    dev: false
 
   /has-bigints@1.0.2:
     resolution: {integrity: sha512-tSvCKtBr9lkF0Ex0aQiP9N+OpV4zi2r/Nee5VkRDbaqv35RLYMzbwQfFSZZH0kR+Rd6302UJZ2p/bJCEoR3VoQ==}

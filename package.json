@@ -41,6 +41,7 @@
     "vite-tsconfig-paths": "4.2.0"
   },
   "dependencies": {
+    "hamburger-qwik": "^0.1.1",
     "typed.js": "^2.0.16"
   }
 }
