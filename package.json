@@ -22,15 +22,15 @@
     "qwik": "qwik"
   },
   "devDependencies": {
-    "@builder.io/qwik": "^1.1.5",
-    "@builder.io/qwik-city": "^1.1.5",
+    "@builder.io/qwik": "^1.2.10",
+    "@builder.io/qwik-city": "^1.2.10",
     "@types/eslint": "8.40.0",
     "@types/node": "^20.2.5",
     "@typescript-eslint/eslint-plugin": "5.59.8",
     "@typescript-eslint/parser": "5.59.8",
     "autoprefixer": "^10.4.14",
     "eslint": "8.41.0",
-    "eslint-plugin-qwik": "^1.1.5",
+    "eslint-plugin-qwik": "^1.2.10",
     "postcss": "^8.4.23",
     "prettier": "2.8.8",
     "tailwindcss": "^3.3.1",
@@ -39,5 +39,8 @@
     "vercel": "^29.1.1",
     "vite": "4.3.9",
     "vite-tsconfig-paths": "4.2.0"
+  },
+  "dependencies": {
+    "typed.js": "^2.0.16"
   }
 }
