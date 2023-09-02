@@ -1,4 +1,4 @@
-export const getGifs = () => {
+export const getGifs = async () => {
   const gifs = [
     {
       gif: 'https://thumbs.gfycat.com/BlandSecondaryHalibut-size_restricted.gif',
