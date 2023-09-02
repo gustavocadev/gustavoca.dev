@@ -1,5 +1,6 @@
 import { component$, useSignal } from '@builder.io/qwik';
 import { Link, useLocation } from '@builder.io/qwik-city';
+import Hamburger from 'hamburger-qwik';
 
 export const Navbar = component$(() => {
   const isOpen = useSignal(false);
@@ -12,15 +13,15 @@ export const Navbar = component$(() => {
         } top-0`}
       >
         <nav class="relative z-50 flex flex-col items-center justify-center px-[16px] font-semibold sm:flex-row ">
-          {/* <header className="flex text-[18px] lg:text-[24px] my-[34px] uppercase text-center text-white hover:text-[#81ECEC] transition">
-                    <h1>CA Gustavo</h1>
-                </header> */}
+          {/* <header class="flex text-[18px] lg:text-[24px] my-[34px] uppercase text-center text-white hover:text-[#81ECEC] transition">
+            <h1>CA Gustavo</h1>
+          </header> */}
           <div class="flex w-full justify-end pt-[16px] sm:hidden ">
-            {/* <Hamburger toggled={isOpen} toggle={setOpen} /> */}
+            <Hamburger toggle={isOpen} />
           </div>
           <ul
             class={`${
-              isOpen ? 'flex' : 'hidden'
+              isOpen.value ? 'flex' : 'hidden'
             } w-full flex-col  gap-[36px] py-[18px] text-center text-[18px] uppercase sm:my-[34px] sm:flex  sm:w-auto sm:flex-row sm:gap-[45px] sm:py-[0px] lg:gap-[45px] lg:text-[18px]`}
           >
             <li>
