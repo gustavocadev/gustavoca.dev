@@ -2,6 +2,7 @@ import { component$, Slot } from '@builder.io/qwik';
 import type { RequestHandler } from '@builder.io/qwik-city';
 import { Navbar } from '~/components/ui/Navbar';
 import { Footer } from '../components/ui/Footer';
+import { GlobalLoader } from '~/components/global-loader';
 
 export const onGet: RequestHandler = async ({ cacheControl }) => {
   // Control caching for this request for best performance and to reduce hosting costs:
@@ -17,6 +18,7 @@ export const onGet: RequestHandler = async ({ cacheControl }) => {
 export default component$(() => {
   return (
     <>
+      <GlobalLoader />
       <Navbar />
       <main class="lg:py-[90px] max-h-screen">
         <Slot />
