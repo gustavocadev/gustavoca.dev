@@ -18,7 +18,9 @@ export default component$(() => {
   return (
     <>
       <Navbar />
-      <Slot />
+      <main class="lg:py-[90px] max-h-screen">
+        <Slot />
+      </main>
       <Footer />
     </>
   );
