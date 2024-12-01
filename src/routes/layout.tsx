@@ -20,7 +20,7 @@ export default component$(() => {
     <>
       <GlobalLoader />
       <Navbar />
-      <main class="lg:py-[90px] max-h-screen">
+      <main>
         <Slot />
       </main>
       <Footer />
