@@ -78,10 +78,19 @@ export default component$(() => {
   // });
   return (
     <main class="px-[16px] sm:py-[24px] sm:px-[32px] lg:px-[112px] space-y-[148px]">
-      <section class="grid grid-cols-1 gap-y-[38px] xl:grid-cols-7 px-[220px] py-[96px] items-center">
-        <section class="col-span-1 mx-auto text-center text-[40px] lg:text-left xl:col-span-4 space-y-8">
-          <h2 class="font-semibold">
-            Construyendo un futuro mejor a través de la tecnología.
+      <section class="grid grid-cols-1 gap-y-[38px] xl:grid-cols-7 px-6 lg:px-[220px] py-[56px] lg:py-[96px] items-center">
+        <section class="col-span-1 mx-auto text-2xl lg:text-[42px] text-left xl:col-span-4 space-y-8 order-2">
+          <h2 class="font-semibold leading-snug">
+            <span class="dark:text-[#FF7675]">Construyendo</span> un{' '}
+            <span class="dark:text-[#74B9FF]">futuro</span>{' '}
+            <span class="dark:text-[#7BED9F]">mejor</span> a través de la{' '}
+            <span
+              class="dark:text-[#A29BFE] cursor-pointer"
+              // ref={el}
+            >
+              tecnología
+            </span>
+            .
           </h2>
 
           <div class="space-y-3">
@@ -94,7 +103,7 @@ export default component$(() => {
             </Button>
           </div>
         </section>
-        <section class="col-span-1 mx-auto flex items-center xl:col-span-3">
+        <section class="col-span-1 mx-auto flex items-center xl:col-span-3 order-1 lg:order-2">
           <figure class="w-full transition duration-200">
             <img
               width={412}
