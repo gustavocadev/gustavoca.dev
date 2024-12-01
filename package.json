@@ -5,7 +5,10 @@
     "node": ">=15.0.0"
   },
   "private": true,
-  "trustedDependencies": ["sharp"],
+  "trustedDependencies": [
+    "sharp",
+    "nx"
+  ],
   "type": "module",
   "scripts": {
     "build": "qwik build",
@@ -33,9 +36,11 @@
     "autoprefixer": "^10.4.20",
     "eslint": "8.56.0",
     "eslint-plugin-qwik": "^1.11.0",
+    "nx": "^20.1.4",
     "postcss": "^8.4.49",
     "prettier": "3.2.5",
     "prettier-plugin-tailwindcss": "^0.5.14",
+    "qwik-ui": "^0.1.4",
     "tailwindcss": "3.3.3",
     "typescript": "5.3.3",
     "undici": "6.0.0",
@@ -47,5 +52,6 @@
     "clsx": "^2.1.1",
     "hamburger-qwik": "^0.2.1",
     "typed.js": "^2.1.0"
-  }
+  },
+  "nx": {}
 }
