@@ -1,7 +1,7 @@
 import { component$, Slot } from '@builder.io/qwik';
 import type { RequestHandler } from '@builder.io/qwik-city';
-import { Navbar } from '~/components/ui/Navbar';
-import { Footer } from '../components/ui/Footer';
+import { Navbar } from '~/components/shared/Navbar';
+import { Footer } from '../components/shared/Footer';
 import { GlobalLoader } from '~/components/global-loader';
 
 export const onGet: RequestHandler = async ({ cacheControl }) => {
