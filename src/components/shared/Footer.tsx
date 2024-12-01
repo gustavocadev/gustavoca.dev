@@ -2,7 +2,7 @@ import { component$ } from '@builder.io/qwik';
 
 export const Footer = component$(() => {
   return (
-    <footer class="flex h-[92px] w-full items-center justify-between bg-white px-[32px] text-[18px] font-semibold dark:bg-[#131313] dark:text-gray-200 lg:px-[112px] lg:text-[22px]">
+    <footer class="flex h-[92px] w-full items-center justify-between px-[32px] text-[18px] font-semibold dark:bg-[#131313] dark:text-gray-200 lg:px-[112px] lg:text-[22px] border-t">
       <h2>
         CA Gustavo <span class="text-yellow-400">⚡</span> ©{' '}
         {new Date().getFullYear()}{' '}
@@ -42,23 +42,6 @@ export const Footer = component$(() => {
             />
             <path
               d="M9 20.0267C6 20.9999 3.5 20.0267 2 17.0267"
-              stroke="currentColor"
-              stroke-line-cap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
-        </a>
-        <a target="_blank" href="https://www.facebook.com/gustavocadev">
-          <svg
-            width={24}
-            height={24}
-            stroke-width="1.5"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M17 2H14C12.6739 2 11.4021 2.52678 10.4645 3.46447C9.52678 4.40215 9 5.67392 9 7V10H6V14H9V22H13V14H16L17 10H13V7C13 6.73478 13.1054 6.48043 13.2929 6.29289C13.4804 6.10536 13.7348 6 14 6H17V2Z"
               stroke="currentColor"
               stroke-line-cap="round"
               stroke-linejoin="round"
