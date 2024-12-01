@@ -1,6 +1,8 @@
 import { $, component$, useSignal, useVisibleTask$ } from '@builder.io/qwik';
 import { routeLoader$, type DocumentHead } from '@builder.io/qwik-city';
-import Typed, { type TypedOptions } from 'typed.js';
+import AboutMeSection from '~/components/about-me-section';
+// import Typed, { type TypedOptions } from 'typed.js';
+import { Button } from '~/components/ui/button';
 import { getGifs } from '~/helpers/gifs';
 
 export const useGifLoader = routeLoader$(async () => {
@@ -13,7 +15,7 @@ export default component$(() => {
   const gifLoader = useGifLoader();
   const image = useSignal('');
 
-  const el = useSignal<HTMLSpanElement>();
+  // const el = useSignal<HTMLSpanElement>();
 
   // i create a function a generate a random gif
   const randomGif = $(() => {
@@ -49,49 +51,48 @@ export default component$(() => {
     localStorage.setItem('current-gif', image.value);
   });
 
-  useVisibleTask$(({ cleanup }) => {
-    const options: TypedOptions = {
-      strings: [
-        "<i class='text-[#FF7675] not-italic'>Bienvenido</i>",
-        "<i class='text-[#A29BFE] not-italic'>Bienvenida</i>",
-      ],
-      // stringsElement: "#cadenas-texto", // ID del elemento que contiene cadenas de texto a mostrar.
-      typeSpeed: 75, // Velocidad en mlisegundos para poner una letra,
-      startDelay: 300, // Tiempo de retraso en iniciar la animacion. Aplica tambien cuando termina y vuelve a iniciar,
-      backSpeed: 75, // Velocidad en milisegundos para borrrar una letra,
-      smartBackspace: false, // Eliminar solamente las palabras que sean nuevas en una cadena de texto.
-      shuffle: false, // Alterar el orden en el que escribe las palabras.
-      // backDelay: 1500, // Tiempo de espera despues de que termina de escribir una palabra. // error
-      loop: true, // Repetir el array de strings
-      showCursor: true, // Mostrar cursor palpitanto
-      cursorChar: '|', // Caracter para el cursor
-      contentType: 'html', // 'html' o 'null' para texto sin formato
-    };
-    const typed = new Typed(el.value, options);
+  // useVisibleTask$(({ cleanup }) => {
+  //   const options: TypedOptions = {
+  //     strings: [
+  //       "<i class='text-[#FF7675] not-italic'>Bienvenido</i>",
+  //       "<i class='text-[#A29BFE] not-italic'>Bienvenida</i>",
+  //     ],
+  //     // stringsElement: "#cadenas-texto", // ID del elemento que contiene cadenas de texto a mostrar.
+  //     typeSpeed: 75, // Velocidad en mlisegundos para poner una letra,
+  //     startDelay: 300, // Tiempo de retraso en iniciar la animacion. Aplica tambien cuando termina y vuelve a iniciar,
+  //     backSpeed: 75, // Velocidad en milisegundos para borrrar una letra,
+  //     smartBackspace: false, // Eliminar solamente las palabras que sean nuevas en una cadena de texto.
+  //     shuffle: false, // Alterar el orden en el que escribe las palabras.
+  //     // backDelay: 1500, // Tiempo de espera despues de que termina de escribir una palabra. // error
+  //     loop: true, // Repetir el array de strings
+  //     showCursor: true, // Mostrar cursor palpitanto
+  //     cursorChar: '|', // Caracter para el cursor
+  //     contentType: 'html', // 'html' o 'null' para texto sin formato
+  //   };
+  //   const typed = new Typed(el.value, options);
 
-    cleanup(() => {
-      // Destroy Typed instance during cleanup to stop animation
-      typed.destroy();
-    });
-  });
+  //   cleanup(() => {
+  //     // Destroy Typed instance during cleanup to stop animation
+  //     typed.destroy();
+  //   });
+  // });
   return (
-    <main class="px-[16px] sm:py-[24px] sm:px-[32px] lg:px-[112px] ">
-      <section class="grid grid-cols-1 gap-y-[38px] lg:gap-x-[38px] xl:grid-cols-7 ">
-        <section class="col-span-1 mx-auto w-full text-center text-[50px] font-bold sm:text-[92px] lg:text-left xl:col-span-4">
-          <h1 class="leading-[68px] sm:leading-[108px]">
-            <div>
-              <span class="text-[#7BED9F]">¡Hola!</span>{' '}
-              <span class="font-normal">👋</span>,
-            </div>
-            <div>
-              <span>soy </span>
-              <span class="text-[#74B9FF]">Gustavo</span>{' '}
-            </div>
-            <div class="h-[62px] sm:h-[100px]">
-              <span ref={el}></span>
-            </div>
-            <div class="text-[#FD79A8]">\^o^/</div>
-          </h1>
+    <main class="px-[16px] sm:py-[24px] sm:px-[32px] lg:px-[112px] space-y-[148px]">
+      <section class="grid grid-cols-1 gap-y-[38px] xl:grid-cols-7 px-[220px] py-[96px] items-center">
+        <section class="col-span-1 mx-auto text-center text-[40px] lg:text-left xl:col-span-4 space-y-8">
+          <h2 class="font-semibold">
+            Construyendo un futuro mejor a través de la tecnología.
+          </h2>
+
+          <div class="space-y-3">
+            <Button class="block w-36" size="md">
+              Sobre mi
+            </Button>
+
+            <Button class="block w-36" look="outline" size="md">
+              CV
+            </Button>
+          </div>
         </section>
         <section class="col-span-1 mx-auto flex items-center xl:col-span-3">
           <figure class="w-full transition duration-200">
@@ -99,12 +100,14 @@ export default component$(() => {
               width={412}
               height={412}
               class={`vov fade-in-right w-full rounded-xl transition duration-200	`}
-              src={image.value}
+              src="https://placehold.it/412x412"
               alt="gustavoca image"
             />
           </figure>
         </section>
       </section>
+
+      <AboutMeSection />
     </main>
   );
 });
