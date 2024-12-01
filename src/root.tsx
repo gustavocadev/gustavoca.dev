@@ -31,7 +31,7 @@ export default component$(() => {
       </head>
       <body
         lang="en"
-        class="text-dark w-full overflow-x-hidden bg-[#F7F6F3] dark:bg-[#181818] dark:text-gray-200"
+        class="w-full overflow-x-hidden bg-[#F7F6F3] dark:bg-[#181818]"
       >
         <RouterOutlet />
         {!isDev && <ServiceWorkerRegister />}
