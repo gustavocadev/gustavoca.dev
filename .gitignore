@@ -42,3 +42,10 @@ lerna-debug.log*
 
 # Vercel
 .vercel
+
+
+.nx/cache
+.nx/workspace-data
+
+# Cloudflare
+functions/**/*.js
