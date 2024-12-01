@@ -8,9 +8,7 @@ export const Navbar = component$(() => {
   return (
     <>
       <header
-        class={`absolute  h-auto w-full ${
-          isOpen.value && 'bg-[#131313]'
-        } top-0`}
+        class={`absolute h-auto w-full ${isOpen.value && 'bg-[#F7F6F3]'} top-0`}
       >
         <nav class="relative z-50 flex flex-col items-center justify-center px-[16px] font-semibold sm:flex-row py-4">
           {/* <header class="flex text-[18px] lg:text-[24px] my-[34px] uppercase text-center text-white hover:text-[#81ECEC] transition">
