@@ -77,7 +77,7 @@ export default component$(() => {
   return (
     <main class="px-[16px] sm:py-[24px] sm:px-[32px] lg:px-[112px] ">
       <section class="grid grid-cols-1 gap-y-[38px] lg:gap-x-[38px] xl:grid-cols-7 ">
-        <section class="col-span-1 mx-auto w-full text-center text-[50px] font-bold sm:text-[92px] lg:text-left xl:col-span-4">
+        <section class="col-span-1 mx-auto text-center text-[50px] font-bold sm:text-[92px] lg:text-left xl:col-span-4">
           <h1 class="leading-[68px] sm:leading-[108px]">
             <div>
               <span class="text-[#7BED9F]">¡Hola!</span>{' '}
